@@ -70,7 +70,7 @@ const Home: NextPage = () => {
             <div className="w-full lg:w-2/5 h-full lg:h-fit lg:min-h-full p-5 px-10 bg-white dark:bg-neutral-800 rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg flex flex-col justify-center">
               <h3 className="text-lg sm:text-xl md:text-2xl">Initiative</h3>
               <p className="text-sm sm:text-lg md:text-xl text-slate-500 dark:text-slate-200 font-light leading-relaxed mt-3">
-                The <span className="text-orange-400">Initiative</span> in Digital Initiative stands for <span className="text-green-400">taking action</span>. Our company strives to stay ahead of the game and keep up to date with the latest trends on the market. Keeping something relative can be hard in the age of the internet which is why we do extensive research to <span className="text-red-400">maximize</span> the effectiveness of our solutions.
+                The <span className="text-orange-400">Initiative</span> in Digital Initiative stands for <span className="text-green-400">taking action</span>. Our company strives to stay ahead of the game and keep up to date with the latest trends on the market. We do extensive research to <span className="text-red-400">maximize</span> the effectiveness of our solutions.
               </p>
             </div>
           </div>
