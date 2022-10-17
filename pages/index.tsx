@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                 will lead to an <span className="text-blue-400">increase</span> in your conversion rates.
               </p>
             </div>
-            <div className="w-full lg:w-3/5 h-full min-h-[50%] lg:min-h-full relative rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg overflow-hidden">
+            <div className="w-full lg:w-3/5 h-1/2 min-h-[50%] lg:min-h-full relative rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg overflow-hidden">
               <img
                 src="/trend.png"
                 className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-h-full min-w-full rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg"
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto bg-white dark:bg-neutral-800 py-20 text-black dark:text-white">
-          <div className="bg-slate-100 drop-shadow-xl hover:drop-shadow-2xl dark:drop-shadow-none dark:shadow-lg dark:shadow-gray-600 dark:hover:shadow-gray-600 dark:hover:shadow-xl dark:hover:drop-shadow-none border-2 border-gray-50 dark:border-gray-600 transition duration-500 rounded-xl flex flex-col lg:flex-row h-fit min-h-[400px] lg:h-fit ">
+          <div className="bg-slate-100 drop-shadow-xl hover:drop-shadow-2xl dark:drop-shadow-none dark:shadow-lg dark:shadow-gray-600 dark:hover:shadow-gray-600 dark:hover:shadow-xl dark:hover:drop-shadow-none border-2 border-gray-50 dark:border-gray-600 transition duration-500 rounded-xl flex flex-col lg:flex-row h-[500px] lg:h-fit ">
             <div className="w-full lg:w-3/5 min-h-[50%] lg:min-h-full relative rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg overflow-hidden">
               <img
                 src="/books-lightpulb.jpg"
