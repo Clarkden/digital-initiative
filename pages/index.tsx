@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         </section>
         <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto bg-white dark:bg-neutral-800 py-20 text-black dark:text-white">
           <div className="rounded-xl bg-slate-100 drop-shadow-xl hover:drop-shadow-2xl dark:drop-shadow-none dark:shadow-lg dark:shadow-gray-600 dark:hover:shadow-gray-600 dark:hover:shadow-xl dark:hover:drop-shadow-none border-2 border-gray-50 dark:border-gray-600 transition duration-500 flex flex-col-reverse lg:flex-row h-[450px] ">
-            <div className="w-full lg:w-2/5 h-fit lg:min-h-full p-5 px-10 bg-white dark:bg-neutral-800 rounded-b-lg lg:rounded-br-none lg:rounded-l-lg flex flex-col justify-center">
+            <div className="w-full lg:w-2/5 h-full lg:min-h-full p-5 px-10 bg-white dark:bg-neutral-800 rounded-b-lg lg:rounded-br-none lg:rounded-l-lg flex flex-col justify-center">
               <h3 className="text-lg sm:text-xl md:text-2xl">Purpose</h3>
               <p className="text-sm sm:text-lg md:text-xl text-slate-500 dark:text-slate-200 font-light leading-relaxed mt-3">
                 At Digital Initiative we want to take the necessary steps to
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                 will lead to an <span className="text-blue-400">increase</span> in your conversion rates.
               </p>
             </div>
-            <div className="w-full lg:w-3/5 h-1/2 min-h-[50%] lg:min-h-full relative rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg overflow-hidden">
+            <div className="w-full lg:w-3/5 min-h-[50%] lg:min-h-full relative rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg overflow-hidden">
               <img
                 src="/trend.png"
                 className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-h-full min-w-full rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg"
