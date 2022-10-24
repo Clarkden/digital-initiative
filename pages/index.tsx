@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           name="description"
           content="Based out of Los Angeles, California, our agency works to improve companies and brands though various aspects of digital marketing."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0"/>
         <meta
           name="keywords"
           content="marketing, seo, target ad, digital marketing, affiliate marketing, social media marketing, marketing strategy, email marketing, marketing plan, advertising agency, internet marketing, e marketing, seo services, direct marketing, digital marketing agency, seo company, what is digital marketing, b2b marketing, social media marketing, marketing agency,  web marketing, online advertising"
