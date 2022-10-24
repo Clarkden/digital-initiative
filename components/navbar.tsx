@@ -43,9 +43,9 @@ const Navbar: FunctionComponent = () => {
             </a>
           </li>
           <li>
-            <button className="px-2 py-1 bg-white text-black hover:bg-[#4d22f4] hover:text-white rounded-md outline-none md:text-base lg:text-lg font-light transition">
+            <a href="#contact" className="px-2 py-2 bg-white text-black hover:bg-[#4d22f4] hover:text-white rounded-md outline-none md:text-base lg:text-lg font-light transition">
               Contact
-            </button>
+            </a>
           </li>
         </ul>
         <div className="w-fit block md:hidden lg:hidden">
@@ -59,8 +59,8 @@ const Navbar: FunctionComponent = () => {
             }
           />
         </div>
-        <div className={`${mobileMenu} transition-height duration-500 overflow-hidden absolute right-0 top-16 bg-white dark:bg-neutral-800 z-50 px-5 rounded-lg md:hidden lg:hidde`}>
-          <ul className="flex flex-col gap-6 items-center text-[#1D2023] dark:text-white h-full justify-center">
+        <div className={`${mobileMenu} transition-height duration-500 overflow-hidden absolute right-0 top-16 bg-white z-50 px-5 rounded-lg md:hidden lg:hidde`}>
+          <ul className="flex flex-col gap-6 items-center text-[#1D2023] h-full justify-center">
             <li>
               <a
                 href="#about"
@@ -78,9 +78,9 @@ const Navbar: FunctionComponent = () => {
               </a>
             </li>
             <li>
-              <button className="px-3 py-1 bg-[#1D2023] dark:bg-white text-white dark:text-[#1D2023] rounded-sm outline-none text-sm md:text-base lg:text-lg font-light hover:bg-orange-400  transition">
+              <a href="#contact" className="px-2 py-2 hover:bg-black hover:text-white bg-[#4d22f4] text-white rounded-md outline-none md:text-base lg:text-lg font-light transition">
                 Contact
-              </button>
+              </a>
             </li>
           </ul>
         </div>

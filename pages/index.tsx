@@ -53,57 +53,64 @@ const Home: NextPage = () => {
           <div className="bg-[#fffafa] h-40 absolute -bottom-20 sm:-bottom-30 md:-bottom-40 -left-10 z-50 rotate-[8deg] w-[120vw] mx-auto "></div>
         </section>
         <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto mt-36 text-black ">
-          <div className="rounded-xl shadow-2xl shadow-pink-200 transition duration-500 flex flex-col-reverse lg:flex-row h-fit lg:h-[400px] overflow-hidden border-[1px] border-pink-300">
-            <div className="w-full lg:w-2/5 h-full lg:min-h-full p-5 px-10 bg-white border-t-[1px] border-pink-300 lg:border-t-0 lg:border-r-[1px] lg:border-pink-300 rounded-b-lg lg:rounded-br-none lg:rounded-l-lg flex flex-col justify-center ">
-              <h3 className="text-lg sm:text-xl md:text-2xl text-pink-400">
-                Purpose
-              </h3>
-              <p className="text-sm sm:text-lg md:text-xl text-black font-light leading-relaxed mt-3">
-                At Digital Initiative we want to take the necessary steps to
-                help you <span className="text-purple-400">succeed</span>. As
-                your partner, we will work tirelesly to help improve your
-                digital pressence in a variety of ways that will lead to an{" "}
-                <span className="text-blue-400">increase</span> in your
-                conversion rates.
-              </p>
-            </div>
-            <div className="w-full lg:w-3/5 min-h-[200px] lg:min-h-full relative rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg overflow-hidden">
-              <img
-                src="/images/trend.png"
-                className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-h-full min-w-full rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg"
-              ></img>
+          <div className="w-fit h-fit bg-rose-300 rounded-xl translate-x-1 translat-y-1">
+            <div className="rounded-xl shadow-2xl shadow-rose-200 transition duration-500 flex flex-col-reverse lg:flex-row h-fit lg:h-[400px] overflow-hidden border-[1px] border-rose-300 -translate-x-2 -translate-y-2">
+              <div className="w-full lg:w-2/5 h-full lg:min-h-full p-5 px-10 bg-white border-t-[1px] border-rose-300 lg:border-t-0 lg:border-r-[1px] lg:border-rose-300 rounded-b-lg lg:rounded-br-none lg:rounded-l-lg flex flex-col justify-around ">
+                <h3 className="text-lg sm:text-xl md:text-2xl text-black">
+                  Purpose
+                </h3>
+                <p className="text-sm sm:text-lg md:text-xl text-black font-light leading-relaxed mt-3">
+                  At Digital Initiative we want to take the necessary steps to
+                  help you <span className="text-purple-400">succeed</span>. As
+                  your partner, we will work tirelesly to help improve your
+                  digital pressence in a variety of ways that will lead to an{" "}
+                  <span className="text-blue-400">increase</span> in your
+                  conversion rates.
+                </p>
+              </div>
+              <div className="w-full lg:w-3/5 min-h-[200px] lg:min-h-full relative rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg overflow-hidden">
+                <img
+                  src="/images/trend.png"
+                  className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-h-full min-w-full rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg"
+                ></img>
+              </div>
             </div>
           </div>
         </section>
         <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-16 md:my-24 text-black ">
-          <div className="shadow-2xl shadow-purple-200 transition duration-500 rounded-xl flex flex-col lg:flex-row h-fit lg:h-[400px] overflow-hidden border-[1px] border-purple-300">
-            <div className="w-full min-h-[200px] lg:w-3/5  lg:min-h-full relative rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg overflow-hidden">
-              <img
-                src="/images/books-lightpulb.jpg"
-                className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-h-full min-w-full rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg"
-              ></img>
-            </div>
-            <div className="w-full lg:w-2/5 h-full lg:h-fit lg:min-h-full p-5 px-10 bg-white border-t-[1px] border-purple-300 lg:border-t-0 lg:border-l-[1px] lg:border-purple-300 rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg flex flex-col justify-center">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-left text-purple-400">
-                Initiative
-              </h3>
-              <p className="text-sm sm:text-lg md:text-xl text-black font-light leading-relaxed mt-3 lg:text-left">
-                The <span className="text-orange-400">Initiative</span> in
-                Digital Initiative stands for{" "}
-                <span className="text-green-400">taking action</span>. Our
-                company strives to stay ahead of the game and keep up to date
-                with the latest trends on the market. We do extensive research
-                to <span className="text-red-400">maximize</span> the
-                effectiveness of our solutions.
-              </p>
+          <div className="w-fit h-fit bg-purple-300 rounded-xl translate-x-1 translate-y-1">
+            <div className="shadow-2xl shadow-purple-300 transition duration-500 rounded-xl flex flex-col lg:flex-row h-fit lg:h-[400px] overflow-hidden border-[1px] border-purple-300 -translate-x-2 -translate-y-2">
+              <div className="w-full min-h-[200px] lg:w-3/5  lg:min-h-full relative rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg overflow-hidden">
+                <img
+                  src="/images/books-lightpulb.jpg"
+                  className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-h-full min-w-full rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg"
+                ></img>
+              </div>
+              <div className="w-full lg:w-2/5 h-full lg:h-fit lg:min-h-full p-5 px-10 bg-white border-t-[1px] border-purple-300 lg:border-t-0 lg:border-l-[1px] lg:border-purple-300 rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg flex flex-col justify-around">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-left text-black">
+                  Initiative
+                </h3>
+                <p className="text-sm sm:text-lg md:text-xl text-black font-light leading-relaxed mt-3 lg:text-left">
+                  The <span className="text-orange-400">Initiative</span> in
+                  Digital Initiative stands for{" "}
+                  <span className="text-green-400">taking action</span>. Our
+                  company strives to stay ahead of the game and keep up to date
+                  with the latest trends on the market. We do extensive research
+                  to <span className="text-red-400">maximize</span> the
+                  effectiveness of our solutions.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="h-fit lg:h-[90vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto py-5 md:py-20" id="services">
+        <section
+          className="h-fit lg:h-[90vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40 md:my-20"
+          id="services"
+        >
           <div className="w-full mb-14 bg-blue-600 rounded-lg translate-x-1 translate-y-1">
             <h1 className=" text-black text-base sm:text-lg md:text-xl lg:text-2xl w-full h-full border-[1px] border-blue-600 rounded-lg p-3 bg-white -translate-x-2 -translate-y-2 saturate-150 shadow-lg shadow-blue-600">
-              What we offer
+              Well what do we offer?
             </h1>
           </div>
           <div className="min-w-full h-full mx-auto gap-10 sm:gap-8 md:gap-12 lg:gap-x-32 grid grid-cols-1 lg:grid-cols-2 text-black">
@@ -173,8 +180,11 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40" id="about">
-          <div className="h-full bg-white p-5 rounded-lg border-[1px] border-black drop-shadow-2xl">
+        <section
+          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40 bg-black rounded-lg"
+          id="about"
+        >
+          <div className="h-full bg-white p-5 rounded-lg border-[1px] border-black drop-shadow-2xl -translate-x-2 -translate-y-2">
             <div className="grid crod-cols-1 md:grid-cols-2 gap-10 h-full">
               <div className="md:px-10 flex flex-col justify-start items-start md:justify-center md:items-start bg-contain bg-no-repeat h-full pb-5">
                 <h1 className="text-lg md:text-xl lg:text-2xl h-fit w-full">
