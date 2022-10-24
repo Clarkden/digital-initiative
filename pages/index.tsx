@@ -198,7 +198,7 @@ const Home: NextPage = () => {
                   business.
                 </p>
               </div>
-              <div className="flex flex-row gap-5 justify-center items-center relative overflow-hidden rounded-lg h-[350px] md:h-[auto]">
+              <div className="flex flex-row gap-5 justify-center items-center relative overflow-hidden rounded-lg h-[300px] md:h-[auto]">
                 <img
                   src="/images/clark-holden-fullshot.png"
                   className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-h-full min-w-full rounded-lg"
