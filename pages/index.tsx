@@ -16,6 +16,39 @@ import {
 const Home: NextPage = () => {
   return (
     <div className="w-full mx-auto font-outfit">
+      <Head>
+        <title>Digital Initiative</title>
+        <link rel="shortcut icon" href="" />
+        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Based out of Los Angeles, California, our agency works to improve companies and brands though various aspects of digital marketing."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="keywords"
+          content="marketing, seo, target ad, digital marketing, affiliate marketing, social media marketing, marketing strategy, email marketing, marketing plan, advertising agency, internet marketing, e marketing, seo services, direct marketing, digital marketing agency, seo company, what is digital marketing, b2b marketing, social media marketing, marketing agency,  web marketing, online advertising"
+        />
+        <meta property="og:title" content="Digital Initiative" />
+        <meta
+          property="og:description"
+          content="Los Angeles based digital marketing agency"
+        />
+        <meta
+          property="og:image"
+          content="/images/digital_initiative_logo_cropped.PNG"
+        />
+
+        <meta name="twitter:title" content="Digital Intiative" />
+        <meta
+          name="twitter:description"
+          content="Los Angeles based digital marketing agency"
+        />
+        <meta
+          name="twitter:image"
+          content="/images/digital_initiative_logo_cropped.PNG"
+        />
+      </Head>
       <main>
         <section className="h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-300 via-purple-300 to-green-300">
           <Navbar />
@@ -105,7 +138,7 @@ const Home: NextPage = () => {
         </section>
 
         <section
-          className="h-fit lg:h-[90vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40 md:my-20"
+          className="h-fit lg:h-[90vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40 md:mb-40 md:mt-40"
           id="services"
         >
           <div className="w-full mb-14 bg-blue-600 rounded-lg translate-x-1 translate-y-1">
@@ -113,7 +146,7 @@ const Home: NextPage = () => {
               Well what do we offer?
             </h1>
           </div>
-          <div className="min-w-full h-full mx-auto gap-10 sm:gap-8 md:gap-12 lg:gap-x-32 grid grid-cols-1 lg:grid-cols-2 text-black">
+          <div className="min-w-full h-fit mx-auto gap-10 sm:gap-8 md:gap-12 lg:gap-x-32 grid grid-cols-1 lg:grid-cols-2 text-black">
             <div className=" h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-green-300 rounded-lg translate-x-1 translate-y-1">
               <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-green-300 shadow-xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-green-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between ">
@@ -181,7 +214,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section
-          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40 bg-black rounded-lg"
+          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-20 bg-black rounded-lg"
           id="about"
         >
           <div className="h-full bg-white p-5 rounded-lg border-[1px] border-black drop-shadow-2xl -translate-x-2 -translate-y-2">
@@ -198,7 +231,7 @@ const Home: NextPage = () => {
                   business.
                 </p>
               </div>
-              <div className="flex flex-row gap-5 justify-center items-center relative rounded-lg h-[300px] max-h-[300px] md:max-h-full md:h-[auto] overflow-hidden">
+              <div className="flex flex-row gap-5 justify-center items-center relative rounded-lg h-[300px] max-h-[300px] md:max-h-full md:h-[auto] overflow-clip">
                 <img
                   src="/images/clark-holden-fullshot.png"
                   className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-w-full lg:min-h-full lg:min-w-[auto] rounded-lg"
