@@ -147,7 +147,7 @@ const Home: NextPage = () => {
             </h1>
           </div>
           <div className="min-w-full h-fit mx-auto gap-10 sm:gap-8 md:gap-12 lg:gap-x-32 grid grid-cols-1 lg:grid-cols-2 text-black">
-            <div className=" h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-green-300 rounded-lg translate-x-1 translate-y-1">
+            <div className="h-[200px] md:h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-green-300 rounded-lg translate-x-1 translate-y-1">
               <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-green-300 shadow-xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-green-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between ">
                   <h1 className="text-base md:text-lg lg:text-xl text-center h-full">
@@ -164,7 +164,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className=" h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-red-300 rounded-lg translate-x-1 translate-y-1">
+            <div className=" h-[200px] md:h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-red-300 rounded-lg translate-x-1 translate-y-1">
               <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-red-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-red-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between">
                   <h1 className="text-base md:text-lg lg:text-xl text-center h-full">
@@ -178,7 +178,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className=" h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-blue-300 rounded-lg translate-x-1 translate-y-1">
+            <div className="h-[200px] md:h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-blue-300 rounded-lg translate-x-1 translate-y-1">
               <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-blue-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-blue-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between">
                   <h1 className="text-base md:text-lg lg:text-xl text-center h-full">
@@ -196,7 +196,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-orange-300 rounded-lg translate-x-1 translate-y-1">
+            <div className="h-[200px] md:h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-orange-300 rounded-lg translate-x-1 translate-y-1">
               <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-orange-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-orange-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between">
                   <h1 className="text-base md:text-lg lg:text-xl text-center h-full ">
@@ -218,7 +218,7 @@ const Home: NextPage = () => {
           id="about"
         >
           <div className="h-full bg-white p-5 rounded-lg border-[1px] border-black drop-shadow-2xl -translate-x-2 -translate-y-2">
-            <div className="grid crod-cols-1 md:grid-cols-2 gap-10 h-full">
+            <div className="grid crod-cols-1 md:grid-cols-2 gap-10 h-full overflow-hidden">
               <div className="md:px-10 flex flex-col justify-start items-start md:justify-center md:items-start bg-contain bg-no-repeat h-full pb-5">
                 <h1 className="text-lg md:text-xl lg:text-2xl h-fit w-full">
                   About Us
@@ -231,10 +231,10 @@ const Home: NextPage = () => {
                   business.
                 </p>
               </div>
-              <div className="flex flex-row gap-5 justify-center items-center relative rounded-lg h-[300px] max-h-[300px] md:max-h-full md:h-[auto] overflow-clip">
+              <div className="flex flex-row gap-5 justify-center items-center relative rounded-lg h-[300px] max-h-[300px] md:max-h-full md:h-[auto] overflow-hidden">
                 <img
                   src="/images/clark-holden-fullshot.png"
-                  className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-w-full lg:min-h-full lg:min-w-[auto] rounded-lg"
+                  className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-w-full lg:min-h-full lg:min-w-[auto] rounded-lg overflow-hidden"
                 ></img>
               </div>
             </div>
