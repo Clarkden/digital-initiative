@@ -10,6 +10,7 @@ import {
   faComputer,
   faDollar,
   faDollarSign,
+  faPaperPlane,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -24,7 +25,7 @@ const Home: NextPage = () => {
           name="description"
           content="Based out of Los Angeles, California, our agency works to improve companies and brands though various aspects of digital marketing."
         />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
         <meta
           name="keywords"
           content="marketing, seo, target ad, digital marketing, affiliate marketing, social media marketing, marketing strategy, email marketing, marketing plan, advertising agency, internet marketing, e marketing, seo services, direct marketing, digital marketing agency, seo company, what is digital marketing, b2b marketing, social media marketing, marketing agency,  web marketing, online advertising"
@@ -50,7 +51,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <main>
-        <section className="h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-300 via-purple-300 to-green-300">
+        <section className="h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-400 via-purple-400 to-green-400">
           <Navbar />
           <div className="w-11/12 md:w-8/12 mx-auto h-[50vh] sm:h-[40vh] md:h-[90vh] lg:h-[75%] flex flex-col-reverse md:flex-row items-center justify-start md:justify-between gap-16 sm:gap-10 md:gap-8 lg:gap-10">
             <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
@@ -138,7 +139,7 @@ const Home: NextPage = () => {
         </section>
 
         <section
-          className="h-fit lg:h-[90vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40 md:mb-40 md:mt-40"
+          className="h-fit lg:h-[90vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40"
           id="services"
         >
           <div className="w-full mb-14 bg-blue-600 rounded-lg translate-x-1 translate-y-1">
@@ -214,35 +215,75 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section
-          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-20 bg-black rounded-lg"
+          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 md:-mt-20 mx-auto "
           id="about"
         >
-          <div className="h-full bg-white p-5 rounded-lg border-[1px] border-black drop-shadow-2xl -translate-x-2 -translate-y-2">
-            <div className="grid crod-cols-1 md:grid-cols-2 gap-10 h-full overflow-hidden">
-              <div className="md:px-10 flex flex-col justify-start items-start md:justify-center md:items-start bg-contain bg-no-repeat h-full pb-5">
-                <h1 className="text-lg md:text-xl lg:text-2xl h-fit w-full">
-                  About Us
-                </h1>
-                <p className="mt-4 text-lg md:text-xl font-light">
-                  Digital Initiative, founded by Clark Holden, is a Digital
-                  Marketing agency based out of Los Angeles, California. We take
-                  on tedious tasks like website building and ad placements so
-                  that you can have more time on your hands to focus on your
-                  business.
-                </p>
-              </div>
-              <div className="flex flex-row gap-5 justify-center items-center relative rounded-lg h-[300px] max-h-[300px] md:max-h-full md:h-[auto] overflow-hidden">
-                <img
-                  src="/images/clark-holden-fullshot.png"
-                  className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-w-full lg:min-h-full lg:min-w-[auto] rounded-lg overflow-hidden"
-                ></img>
+          <div className="w-full h-full bg-black rounded-lg">
+            <div className="h-full bg-white p-5 rounded-lg border-[1px] border-black drop-shadow-2xl -translate-x-2 -translate-y-2">
+              <div className="grid crod-cols-1 md:grid-cols-2 gap-10 h-full overflow-hidden">
+                <div className="md:px-10 flex flex-col justify-start items-start md:justify-center md:items-start bg-contain bg-no-repeat h-full pb-5">
+                  <h1 className="text-lg md:text-xl lg:text-2xl h-fit w-full">
+                    About Us
+                  </h1>
+                  <p className="mt-4 text-lg md:text-xl font-light">
+                    Digital Initiative, founded by Clark Holden, is a Digital
+                    Marketing agency based out of Los Angeles, California. We
+                    take on tedious tasks like website building and ad
+                    placements so that you can have more time on your hands to
+                    focus on your business.
+                  </p>
+                </div>
+                <div className="flex flex-row gap-5 justify-center items-center relative rounded-lg h-[300px] max-h-[300px] md:max-h-full md:h-[auto] overflow-hidden">
+                  <img
+                    src="/images/clark-holden-fullshot.png"
+                    className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-w-full lg:min-h-full lg:min-w-[auto] rounded-lg overflow-hidden"
+                  ></img>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-20">
-          <div className="w-full h-full rounded-lg">
+          <div className="w-full h-full bg-emerald-300 rounded-lg">
+          <div className="w-full h-full bg-white border-[1px] border-emerald-400 shadow-lg shadow-emerald-300 rounded-lg p-4 pb-8 -translate-x-2 -translate-y-2">
             <h1 className="text-lg md:text-xl lg:text-2xl">Contact</h1>
+            <form className="">
+              <div className="flex flex-col w-full h-fit group">
+                <label
+                  htmlFor="fullName"
+                  className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                >
+                  Full Name
+                </label>
+                <div className="w-full h-fit bg-green-400 rounded-lg">
+                 <input type="fullName" id='fullName' name='fullName' className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none"></input>
+                </div>
+              </div>
+              <div className="flex flex-col w-full h-fit group">
+                <label
+                  htmlFor="email"
+                  className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                >
+                  Email
+                </label>
+                <div className="w-full h-fit bg-blue-400 rounded-lg">
+                 <input type="email" id='email' name='email' className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none"></input>
+                </div>
+              </div>
+              <div className="flex flex-col w-full h-fit group">
+                <label
+                  htmlFor="email"
+                  className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                >
+                  Message
+                </label>
+                <div className="w-full bg-red-400 rounded-lg">
+                 <textarea id='message' name='message' className="-mb-2 p-5 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none resize-none" ></textarea>
+                </div>
+              </div>
+              <button className="w-full p-3 mt-8 bg-emerald-300 text-white rounded-lg hover:bg-white hover:text-black border-[1px] hover:bg-emerald-300/50 border-emerald-300 transition">Send <FontAwesomeIcon icon={faPaperPlane} className="ml-1" size="sm"/></button>
+            </form>
+          </div>
           </div>
         </section>
       </main>

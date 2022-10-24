@@ -29,7 +29,7 @@ const Navbar: FunctionComponent = () => {
           <li>
             <a
               href="#about"
-              className="transition md:text-base lg:text-lg text-black hover:text-white"
+              className="transition md:text-base lg:text-lg text-white hover:text-black"
             >
               About
             </a>
@@ -37,13 +37,13 @@ const Navbar: FunctionComponent = () => {
           <li>
             <a
               href="#services"
-              className=" transition md:text-base lg:text-lg text-black hover:text-white"
+              className=" transition md:text-base lg:text-lg text-white hover:text-black"
             >
               Services
             </a>
           </li>
           <li>
-            <a href="#contact" className="px-2 py-2 bg-white text-black hover:bg-[#4d22f4] hover:text-white rounded-md outline-none md:text-base lg:text-lg font-light transition">
+            <a href="#contact" className=" hover:text-black  rounded-md outline-none md:text-base lg:text-lg font-light transition">
               Contact
             </a>
           </li>
