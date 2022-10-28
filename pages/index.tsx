@@ -291,10 +291,7 @@ const Home: NextPage = () => {
                   pagination={{ clickable: true }}
                   scrollbar={{ draggable: true }}
                   className="h-full w-full"
-                  style={{
-                    "--swiper-pagination-color": "#ef4444",
-                    "--swiper-navigation-color": "#ef4444",
-                  }}
+
                 >
                   <SwiperSlide>
                     <img src="/images/mad_vibes_home.png"></img>
