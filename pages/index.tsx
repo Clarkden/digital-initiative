@@ -7,14 +7,69 @@ import TypeWriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCamera,
+  faCheckCircle,
   faComputer,
   faDollar,
   faDollarSign,
   faPaperPlane,
   faSearch,
+  faXmarkCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
+  const [fullName, setFullName] = useState<string>();
+  const [email, setEmail] = useState<string>();
+  const [message, setMessage] = useState<string>();
+
+  const [unfilledError, setUnfilledError] = useState<boolean>(true);
+  const [submissionError, setSubmissionError] = useState<boolean>(false);
+
+  const [contactColor, setContactColor] = useState<string>("[#4d22f4]");
+  const [contactSubmitted, setContactSumbitted] = useState<boolean>(false);
+
+  const contact = (e: any) => {
+    e.preventDefault();
+
+    if (!fullName || !email || !message) {
+      setUnfilledError(true);
+      return;
+    }
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: fullName,
+        email: email,
+        message: message,
+      }),
+    }).then((response) => {
+      if (response.ok) {
+        setContactSumbitted(true);
+        setContactColor("green-300");
+      } else {
+        setSubmissionError(true);
+        setContactColor("red-300");
+      }
+    });
+  };
+
+  useEffect(() => {
+    if (fullName && email?.includes("@") && message) setUnfilledError(false);
+    else setUnfilledError(true);
+  }, [fullName, email, message]);
+
   return (
     <div className="w-full mx-auto font-outfit">
       <Head>
@@ -50,7 +105,7 @@ const Home: NextPage = () => {
           content="/images/digital_initiative_logo_cropped.PNG"
         />
       </Head>
-      <main>
+      <main className="min-h-full pb-20">
         <section className="h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-400 via-purple-400 to-green-400">
           <Navbar />
           <div className="w-11/12 md:w-8/12 mx-auto h-[50vh] sm:h-[40vh] md:h-[90vh] lg:h-[75%] flex flex-col-reverse md:flex-row items-center justify-start md:justify-between gap-16 sm:gap-10 md:gap-8 lg:gap-10">
@@ -214,8 +269,53 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto mb-40 md:-mt-20">
+          <div className="w-full h-full bg-red-500 shadow-lg shadow-red-500 rounded-lg translate-x-1 translate-y-1">
+            <div className="bg-white border-[1px] border-red-500 rounded-lg -translate-x-2 -translate-y-2 overflow-hidden grid grid-cols-1 lg:grid-cols-2 h-full items-center p-5 lg:px-5">
+              <div className="flex flex-col p-4">
+                <h1 className="text-lg sm:text-xl md:text-2xl lg:text-left text-black pb-2">
+                  Our Work
+                </h1>
+                <p className="pb-5">
+                  We work with clients accross many different intdustries. From
+                  publishing companies to clothing brands, we are confident we
+                  are the right fit for you.
+                </p>
+              </div>
+              <div className="h-fit rounded-lg overflow-hidden">
+                <Swiper
+                  modules={[Navigation, Pagination, A11y]}
+                  spaceBetween={50}
+                  slidesPerView={1}
+                  navigation
+                  pagination={{ clickable: true }}
+                  scrollbar={{ draggable: true }}
+                  className="h-full w-full"
+                  style={{
+                    "--swiper-pagination-color": "#ef4444",
+                    "--swiper-navigation-color": "#ef4444",
+                  }}
+                >
+                  <SwiperSlide>
+                    <img src="/images/mad_vibes_home.png"></img>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src="/images/mad_vibes_1.png"></img>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src="/images/esa_1.JPG"></img>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src="/images/sandman_productions.JPG"></img>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section
-          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 md:-mt-20 mx-auto "
+          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 -mt-10 lg:-mt-10 lg:pt-20 mx-auto "
           id="about"
         >
           <div className="w-full h-full bg-black rounded-lg">
@@ -243,50 +343,141 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-20">
-          <div className="w-full h-full bg-emerald-300 rounded-lg">
-          <div className="w-full h-full bg-white border-[1px] border-emerald-400 shadow-lg shadow-emerald-300 rounded-lg p-4 pb-8 -translate-x-2 -translate-y-2">
-            <h1 className="text-lg md:text-xl lg:text-2xl">Contact</h1>
-            <form className="">
-              <div className="flex flex-col w-full h-fit group">
-                <label
-                  htmlFor="fullName"
-                  className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
-                >
-                  Full Name
-                </label>
-                <div className="w-full h-fit bg-green-400 rounded-lg">
-                 <input type="fullName" id='fullName' name='fullName' className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none"></input>
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-28">
+          <div className={`w-full h-fit bg-${contactColor} rounded-lg`}>
+            <div
+              className={`w-full h-fit bg-white border-[1px] border-${contactColor} shadow-lg shadow-${contactColor}/75 rounded-lg p-4 pb-8 -translate-x-2 -translate-y-2`}
+            >
+              {!submissionError ? (
+                <div className="w-full h-full">
+                  {!contactSubmitted ? (
+                    <div className="w-full h-full">
+                      <h1 className="text-lg md:text-xl lg:text-2xl">
+                        Contact
+                      </h1>
+                      <p className="text-slate-500">
+                        Want to work with us?{" "}
+                        <span className="text-black">Drop us a message!</span>
+                      </p>
+                      <form onSubmit={(e) => contact(e)}>
+                        <div className="flex flex-col w-full h-fit group">
+                          <label
+                            htmlFor="fullName"
+                            className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                          >
+                            Full Name
+                          </label>
+                          <div className="w-full h-fit bg-[#4d22f4] rounded-lg">
+                            <input
+                              type="fullName"
+                              id="fullName"
+                              name="fullName"
+                              className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none"
+                              onChange={(e) => setFullName(e.target.value)}
+                            ></input>
+                          </div>
+                        </div>
+                        <div className="flex flex-col w-full h-fit group">
+                          <label
+                            htmlFor="email"
+                            className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                          >
+                            Email
+                          </label>
+                          <div className="w-full h-fit bg-[#4d22f4] rounded-lg">
+                            <input
+                              type="email"
+                              id="email"
+                              name="email"
+                              className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none invalid:text-red-400"
+                              onChange={(e) => setEmail(e.target.value)}
+                            ></input>
+                          </div>
+                        </div>
+                        <div className="flex flex-col w-full h-fit group">
+                          <label
+                            htmlFor="email"
+                            className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                          >
+                            Message
+                          </label>
+                          <div className="w-full bg-[#4d22f4] rounded-lg">
+                            <textarea
+                              id="message"
+                              name="message"
+                              className="-mb-2 p-5 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none resize-none"
+                              onChange={(e) => setMessage(e.target.value)}
+                            ></textarea>
+                          </div>
+                        </div>
+                        {unfilledError ? (
+                          <button
+                            disabled
+                            className="w-full p-3 mt-8 ] focus:text-white rounded-lg bg-white text-black border-[1px] bg-[#4d22f4]/25 border-[#4d22f4] transition"
+                          >
+                            Send{" "}
+                            <FontAwesomeIcon
+                              icon={faPaperPlane}
+                              className="ml-1"
+                              size="sm"
+                            />
+                          </button>
+                        ) : (
+                          <button className="w-full p-3 mt-8 bg-[#4d22f4] text-white rounded-lg border-[1px]  border-[#4d22f4] transition">
+                            Send{" "}
+                            <FontAwesomeIcon
+                              icon={faPaperPlane}
+                              className="ml-1"
+                              size="sm"
+                            />
+                          </button>
+                        )}
+                      </form>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="flex flex-col items-center justify-center pt-4">
+                        <h1 className="text-lg md:text-xl lg:text-2xl">
+                          Good news! Your message was sent!
+                        </h1>
+                        <p className="text-base md:text-lg lg:text-xl mb-3 text-slate-500">
+                          Expect to hear back from us soon.
+                        </p>
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          className="text-2xl lg:text-4xl text-green-400"
+                        />
+                      </div>
+                    </>
+                  )}
                 </div>
-              </div>
-              <div className="flex flex-col w-full h-fit group">
-                <label
-                  htmlFor="email"
-                  className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
-                >
-                  Email
-                </label>
-                <div className="w-full h-fit bg-blue-400 rounded-lg">
-                 <input type="email" id='email' name='email' className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none"></input>
-                </div>
-              </div>
-              <div className="flex flex-col w-full h-fit group">
-                <label
-                  htmlFor="email"
-                  className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
-                >
-                  Message
-                </label>
-                <div className="w-full bg-red-400 rounded-lg">
-                 <textarea id='message' name='message' className="-mb-2 p-5 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none resize-none" ></textarea>
-                </div>
-              </div>
-              <button className="w-full p-3 mt-8 bg-emerald-300 text-white rounded-lg hover:bg-white hover:text-black border-[1px] hover:bg-emerald-300/50 border-emerald-300 transition">Send <FontAwesomeIcon icon={faPaperPlane} className="ml-1" size="sm"/></button>
-            </form>
-          </div>
+              ) : (
+                <>
+                  <div className="flex flex-col items-center justify-center pt-4">
+                    <h1 className="text-lg md:text-xl lg:text-2xl">
+                      Bad news! There was an error sumbitting your message!
+                    </h1>
+                    <p className="text-base md:text-lg lg:text-xl mb-3 text-slate-500">
+                      Please try again later.
+                    </p>
+                    <FontAwesomeIcon
+                      icon={faXmarkCircle}
+                      className="text-2xl lg:text-4xl text-red-400"
+                    />
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         </section>
       </main>
+      <footer className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto  flex flex-row items-center justify-between py-5">
+        <h1>Copyright Digital Initiative 2022</h1>
+        <div className="flex flex-row w-fit gap-2">
+          <a href="#"><FontAwesomeIcon icon={faInstagram} className="text-2xl text-pink-400" /></a>
+          <a href="#"><FontAwesomeIcon icon={faTwitter} className="text-2xl text-blue-400" /></a>
+        </div>
+      </footer>
     </div>
   );
 };
