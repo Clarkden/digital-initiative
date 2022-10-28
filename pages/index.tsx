@@ -105,7 +105,7 @@ const Home: NextPage = () => {
           content="/images/digital_initiative_logo_cropped.PNG"
         />
       </Head>
-      <main className="min-h-full pb-20">
+      <main className="min-h-full">
         <section className="h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-400 via-purple-400 to-green-400">
           <Navbar />
           <div className="w-11/12 md:w-8/12 mx-auto h-[50vh] sm:h-[40vh] md:h-[90vh] lg:h-[75%] flex flex-col-reverse md:flex-row items-center justify-start md:justify-between gap-16 sm:gap-10 md:gap-8 lg:gap-10">
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
           </div>
           <div className="bg-[#fffafa] h-40 absolute -bottom-20 sm:-bottom-30 md:-bottom-40 -left-10 z-50 rotate-[8deg] w-[120vw] mx-auto "></div>
         </section>
-        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto mt-36 text-black ">
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-black my-20">
           <div className="w-fit h-fit bg-rose-300 rounded-xl translate-x-1 translat-y-1">
             <div className="rounded-xl shadow-2xl shadow-rose-200 transition duration-500 flex flex-col-reverse lg:flex-row h-fit lg:h-[400px] overflow-hidden border-[1px] border-rose-300 -translate-x-2 -translate-y-2">
               <div className="w-full lg:w-2/5 h-full lg:min-h-full p-5 px-10 bg-white border-t-[1px] border-rose-300 lg:border-t-0 lg:border-r-[1px] lg:border-rose-300 rounded-b-lg lg:rounded-br-none lg:rounded-l-lg flex flex-col justify-around ">
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-16 md:my-24 text-black ">
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-black my-20">
           <div className="w-fit h-fit bg-purple-300 rounded-xl translate-x-1 translate-y-1">
             <div className="shadow-2xl shadow-purple-300 transition duration-500 rounded-xl flex flex-col lg:flex-row h-fit lg:h-[400px] overflow-hidden border-[1px] border-purple-300 -translate-x-2 -translate-y-2">
               <div className="w-full min-h-[200px] lg:w-3/5  lg:min-h-full relative rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg overflow-hidden">
@@ -194,7 +194,7 @@ const Home: NextPage = () => {
         </section>
 
         <section
-          className="h-fit lg:h-[90vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-40"
+          className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-44"
           id="services"
         >
           <div className="w-full mb-14 bg-blue-600 rounded-lg translate-x-1 translate-y-1">
@@ -269,7 +269,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto mb-40 md:-mt-20">
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-20">
           <div className="w-full h-full bg-red-500 shadow-lg shadow-red-500 rounded-lg translate-x-1 translate-y-1">
             <div className="bg-white border-[1px] border-red-500 rounded-lg -translate-x-2 -translate-y-2 overflow-hidden grid grid-cols-1 lg:grid-cols-2 h-full items-center p-5 lg:px-5">
               <div className="flex flex-col p-4">
@@ -312,10 +312,10 @@ const Home: NextPage = () => {
         </section>
 
         <section
-          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 -mt-10 lg:-mt-10 lg:pt-20 mx-auto "
+          className="h-fit md:h-[60vh] w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-24"
           id="about"
         >
-          <div className="w-full h-full bg-black rounded-lg">
+          <div className="w-full h-full bg-black rounded-lg translate-x-1 translate-y-1">
             <div className="h-full bg-white p-5 rounded-lg border-[1px] border-black drop-shadow-2xl -translate-x-2 -translate-y-2">
               <div className="grid crod-cols-1 md:grid-cols-2 gap-10 h-full overflow-hidden">
                 <div className="md:px-10 flex flex-col justify-start items-start md:justify-center md:items-start bg-contain bg-no-repeat h-full pb-5">
@@ -340,8 +340,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-28">
-          <div className={`w-full h-fit bg-${contactColor} rounded-lg`}>
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-36 mt-40">
+          <div className={`w-full h-fit bg-${contactColor} rounded-lg translate-x-1 translate-y-1`}>
             <div
               className={`w-full h-fit bg-white border-[1px] border-${contactColor} shadow-lg shadow-${contactColor}/75 rounded-lg p-4 pb-8 -translate-x-2 -translate-y-2`}
             >
@@ -468,7 +468,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      <footer className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto  flex flex-row items-center justify-between py-5">
+      <footer className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex flex-row items-center justify-between py-5">
         <h1>Copyright Digital Initiative 2022</h1>
         <div className="flex flex-row w-fit gap-2">
           <a href="#"><FontAwesomeIcon icon={faInstagram} className="text-2xl text-pink-400" /></a>
