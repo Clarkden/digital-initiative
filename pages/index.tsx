@@ -107,11 +107,11 @@ const Home: NextPage = () => {
       </Head>
       <main className="min-h-full">
         <section className="h-fit w-full ">
-          <div className="bg-white h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-400/75 to-red-400/75  saturate-200">
+          <div className="bg-[#293141] h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-400/75 to-red-400/75  saturate-200">
           <Navbar />
           <div className="w-11/12 md:w-8/12 mx-auto h-[40vh] sm:h-[45vh] md:h-[60vh] lg:h-[70%] flex flex-col-reverse md:flex-row items-center justify-start md:justify-between gap-16 sm:gap-10 md:gap-8 lg:gap-10">
             <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-3 w-8/12 md:w-full mx-auto text-gray-900">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-3 w-8/12 md:w-full mx-auto text-white dark:text-gray-900">
                 The only
                   digital marketing
                 team you will need to help your brand or product{" "}
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
             </div>
 
             <div className="w-full md:w-1/2">
-              <h1 className="text-gray-800 text-4xl sm:text-5xl md:text-6xl  text-center md:text-right font-light font-outfit">
+              <h1 className="text-white dark:text-gray-800 text-4xl sm:text-5xl md:text-6xl  text-center md:text-right font-light font-outfit">
                 <TypeWriter
                   options={{
                     strings: [
@@ -138,17 +138,17 @@ const Home: NextPage = () => {
               </h1>
             </div>
           </div>
-          <div className="bg-gray-900 saturate-50 h-40 absolute -bottom-20 sm:-bottom-30 md:-bottom-40 -left-10 z-50 rotate-[8deg] w-[120vw] mx-auto "></div>
+          <div className="bg-[#fcfbfc] dark:bg-gray-900 saturate-50 h-40 absolute -bottom-20 sm:-bottom-30 md:-bottom-40 -left-10 z-50 rotate-[8deg] w-[120vw] mx-auto "></div>
                 </div>
         </section>
-        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-black my-20">
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-black dark:text-white my-20">
           <div className="w-fit h-fit bg-rose-300 rounded-xl translate-x-1 translat-y-1">
             <div className="rounded-xl shadow-2xl shadow-rose-200 transition duration-500 flex flex-col-reverse lg:flex-row h-fit lg:h-[400px] overflow-hidden border-[1px] border-rose-300 -translate-x-2 -translate-y-2">
-              <div className="w-full lg:w-2/5 h-full lg:min-h-full p-5 px-10 bg-white border-t-[1px] border-rose-300 lg:border-t-0 lg:border-r-[1px] lg:border-rose-300 rounded-b-lg lg:rounded-br-none lg:rounded-l-lg flex flex-col justify-around ">
-                <h3 className="text-lg sm:text-xl md:text-2xl text-black">
+              <div className="w-full lg:w-2/5 h-full lg:min-h-full p-5 px-10 bg-white dark:bg-[#293141] border-t-[1px] border-rose-300 lg:border-t-0 lg:border-r-[1px] lg:border-rose-300 rounded-b-lg lg:rounded-br-none lg:rounded-l-lg flex flex-col justify-around ">
+                <h3 className="text-lg sm:text-xl md:text-2xl text-black dark:text-white">
                   Purpose
                 </h3>
-                <p className="text-sm sm:text-lg md:text-xl text-black font-light leading-relaxed mt-3">
+                <p className="text-sm sm:text-lg md:text-xl text-black dark:text-white font-light leading-relaxed mt-3">
                   At Digital Initiative we want to take the necessary steps to
                   help you <span className="text-purple-400">succeed</span>. As
                   your partner, we will work tirelesly to help improve your
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-black my-20">
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-black dark:text-white my-20">
           <div className="w-fit h-fit bg-purple-300 rounded-xl translate-x-1 translate-y-1">
             <div className="shadow-2xl shadow-purple-300 transition duration-500 rounded-xl flex flex-col lg:flex-row h-fit lg:h-[400px] overflow-hidden border-[1px] border-purple-300 -translate-x-2 -translate-y-2">
               <div className="w-full min-h-[200px] lg:w-3/5  lg:min-h-full relative rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg overflow-hidden">
@@ -175,11 +175,11 @@ const Home: NextPage = () => {
                   className="absolute top-[-9999px] bottom-[-9999px] left-[-9999px] right-[-9999px] m-auto min-h-full min-w-full rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg"
                 ></img>
               </div>
-              <div className="w-full lg:w-2/5 h-full lg:h-fit lg:min-h-full p-5 px-10 bg-white border-t-[1px] border-purple-300 lg:border-t-0 lg:border-l-[1px] lg:border-purple-300 rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg flex flex-col justify-around">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-left text-black">
+              <div className="w-full lg:w-2/5 h-full lg:h-fit lg:min-h-full p-5 px-10 bg-white dark:bg-[#293141] border-t-[1px] border-purple-300 lg:border-t-0 lg:border-l-[1px] lg:border-purple-300 rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg flex flex-col justify-around">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-left text-black dark:text-white">
                   Initiative
                 </h3>
-                <p className="text-sm sm:text-lg md:text-xl text-black font-light leading-relaxed mt-3 lg:text-left">
+                <p className="text-sm sm:text-lg md:text-xl text-black dark:text-white font-light leading-relaxed mt-3 lg:text-left">
                   The <span className="text-orange-400">Initiative</span> in
                   Digital Initiative stands for{" "}
                   <span className="text-green-400">taking action</span>. Our
@@ -198,13 +198,13 @@ const Home: NextPage = () => {
           id="services"
         >
           <div className="w-full mb-14 bg-blue-600 rounded-lg translate-x-1 translate-y-1">
-            <h1 className=" text-black text-base sm:text-lg md:text-xl lg:text-2xl w-full h-full border-[1px] border-blue-600 rounded-lg p-3 bg-white -translate-x-2 -translate-y-2 saturate-150 shadow-lg shadow-blue-600">
+            <h1 className=" text-black dark:text-white text-base sm:text-lg md:text-xl lg:text-2xl w-full h-full border-[1px] border-blue-600 rounded-lg p-3 bg-white dark:bg-[bg-[#293141] -translate-x-2 -translate-y-2 saturate-150 shadow-lg shadow-blue-600">
               Well what do we offer?
             </h1>
           </div>
-          <div className="min-w-full h-fit mx-auto gap-10 sm:gap-8 md:gap-12 lg:gap-x-32 grid grid-cols-1 lg:grid-cols-2 text-black">
+          <div className="min-w-full h-fit mx-auto gap-10 sm:gap-8 md:gap-12 lg:gap-x-32 grid grid-cols-1 lg:grid-cols-2 text-black dark:text-white">
             <div className="h-[200px] md:h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-green-300 rounded-lg translate-x-1 translate-y-1 ">
-              <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-green-300 shadow-xl -translate-x-2 -translate-y-2  transition p-5 rounded-lg border-[1px] border-green-300 saturate-200 min-h-full">
+              <div className="flex flex-col items-start justify-between gap-3 w-full bg-white dark:bg-[bg-[#293141] shadow-green-300 shadow-xl -translate-x-2 -translate-y-2  transition p-5 rounded-lg border-[1px] border-green-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between ">
                   <h1 className="text-base md:text-lg lg:text-xl text-center h-full">
                     Web Development
@@ -221,7 +221,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className=" h-[200px] md:h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-red-300 rounded-lg translate-x-1 translate-y-1">
-              <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-red-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-red-300 saturate-200 min-h-full">
+              <div className="flex flex-col items-start justify-between gap-3 w-full bg-white dark:bg-[bg-[#293141] shadow-red-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-red-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between">
                   <h1 className="text-base md:text-lg lg:text-xl text-center h-full">
                     SEO
@@ -235,7 +235,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="h-[200px] md:h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-blue-300 rounded-lg translate-x-1 translate-y-1">
-              <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-blue-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-blue-300 saturate-200 min-h-full">
+              <div className="flex flex-col items-start justify-between gap-3 w-full bg-white dark:bg-[bg-[#293141] shadow-blue-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-blue-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between">
                   <h1 className="text-base md:text-lg lg:text-xl text-center h-full">
                     Paid Ads
@@ -253,7 +253,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="h-[200px] md:h-[180px] min-w-[100%] sm:min-w-[80%] md:min-w-[43%] lg:min-w-[28%] bg-orange-300 rounded-lg translate-x-1 translate-y-1">
-              <div className="flex flex-col items-start justify-between gap-3 w-full bg-white shadow-orange-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-orange-300 saturate-200 min-h-full">
+              <div className="flex flex-col items-start justify-between gap-3 w-full bg-white dark:bg-[bg-[#293141] shadow-orange-300 shadow-2xl -translate-x-2 -translate-y-2 transition p-5 rounded-lg border-[1px] border-orange-300 saturate-200 min-h-full">
                 <div className="flex flex-row w-full justify-between">
                   <h1 className="text-base md:text-lg lg:text-xl text-center h-full ">
                     Influencer Marketing
@@ -271,9 +271,9 @@ const Home: NextPage = () => {
         </section>
         <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-20">
           <div className="w-full h-full bg-red-500 shadow-lg shadow-red-500 rounded-lg translate-x-1 translate-y-1">
-            <div className="bg-white border-[1px] border-red-500 rounded-lg -translate-x-2 -translate-y-2 overflow-hidden grid grid-cols-1 lg:grid-cols-2 h-full items-center p-5 lg:px-5">
+            <div className="bg-white dark:bg-[bg-[#293141] border-[1px] border-red-500 rounded-lg -translate-x-2 -translate-y-2 overflow-hidden grid grid-cols-1 lg:grid-cols-2 h-full items-center p-5 lg:px-5">
               <div className="flex flex-col p-4">
-                <h1 className="text-lg sm:text-xl md:text-2xl lg:text-left text-black pb-2">
+                <h1 className="text-lg sm:text-xl md:text-2xl lg:text-left text-black dark:text-white pb-2">
                   Our Work
                 </h1>
                 <p className="pb-5">
@@ -316,7 +316,7 @@ const Home: NextPage = () => {
           id="about"
         >
           <div className="w-full h-full bg-amber-200 rounded-lg translate-x-1 translate-y-1">
-            <div className="h-full bg-white p-5 rounded-lg border-[1px] border-amber-200 shadow-xl shadow-amber-200 -translate-x-2 -translate-y-2">
+            <div className="h-full bg-white dark:bg-[#293141] p-5 rounded-lg border-[1px] border-amber-200 shadow-xl shadow-amber-200 -translate-x-2 -translate-y-2">
               <div className="grid crod-cols-1 md:grid-cols-2 gap-10 h-full overflow-hidden">
                 <div className="md:px-10 flex flex-col justify-start items-start md:justify-center md:items-start bg-contain bg-no-repeat h-full pb-5">
                   <h1 className="text-lg md:text-xl lg:text-2xl h-fit w-full">
@@ -340,10 +340,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-36 mt-40">
+        <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto my-36 mt-40 text-black dark:text-white">
           <div className={`w-full h-fit bg-${contactColor} rounded-lg translate-x-1 translate-y-1`}>
             <div
-              className={`w-full h-fit bg-white border-[1px] border-${contactColor} shadow-xl shadow-${contactColor}/75 rounded-lg p-4 pb-8 -translate-x-2 -translate-y-2`}
+              className={`w-full h-fit bg-white dark:bg-[#293141] border-[1px] border-${contactColor} shadow-xl shadow-${contactColor}/75 rounded-lg p-4 pb-8 -translate-x-2 -translate-y-2`}
             >
               {!submissionError ? (
                 <div className="w-full h-full">
@@ -352,15 +352,15 @@ const Home: NextPage = () => {
                       <h1 className="text-lg md:text-xl lg:text-2xl">
                         Contact
                       </h1>
-                      <p className="text-slate-500">
+                      <p className="text-slate-500 dark:text-slate-300">
                         Want to work with us?{" "}
-                        <span className="text-black">Drop us a message!</span>
+                        <span className="text-black dark:text-white">Drop us a message!</span>
                       </p>
                       <form onSubmit={(e) => contact(e)}>
                         <div className="flex flex-col w-full h-fit group">
                           <label
                             htmlFor="fullName"
-                            className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                            className="bg-white dark:bg-[#293141] mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
                           >
                             Full Name
                           </label>
@@ -369,7 +369,7 @@ const Home: NextPage = () => {
                               type="fullName"
                               id="fullName"
                               name="fullName"
-                              className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none"
+                              className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none bg-white dark:bg-[#293141]"
                               onChange={(e) => setFullName(e.target.value)}
                             ></input>
                           </div>
@@ -377,7 +377,7 @@ const Home: NextPage = () => {
                         <div className="flex flex-col w-full h-fit group">
                           <label
                             htmlFor="email"
-                            className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                            className="bg-white dark:bg-[#293141] mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
                           >
                             Email
                           </label>
@@ -386,7 +386,7 @@ const Home: NextPage = () => {
                               type="email"
                               id="email"
                               name="email"
-                              className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none invalid:text-red-400"
+                              className="p-2 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none invalid:text-red-400 bg-white dark:bg-[#293141]"
                               onChange={(e) => setEmail(e.target.value)}
                             ></input>
                           </div>
@@ -394,7 +394,7 @@ const Home: NextPage = () => {
                         <div className="flex flex-col w-full h-fit group">
                           <label
                             htmlFor="email"
-                            className="bg-white mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50"
+                            className="bg-white dark:bg-[#293141] mt-4 translate-y-3 translate-x-3 h-fit w-fit group-focus-within:translate-x-2 group-focus-within:translate-y-2 duration-500 transition z-50 "
                           >
                             Message
                           </label>
@@ -402,7 +402,7 @@ const Home: NextPage = () => {
                             <textarea
                               id="message"
                               name="message"
-                              className="-mb-2 p-5 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none resize-none"
+                              className="-mb-2 p-5 border-[1px] rounded-lg focus-within:-translate-x-1 focus-within:-translate-y-1 w-full transition duration-500 outline-none resize-none bg-white dark:bg-[#293141]"
                               onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
                           </div>
@@ -410,7 +410,7 @@ const Home: NextPage = () => {
                         {unfilledError ? (
                           <button
                             disabled
-                            className="w-full p-3 mt-8 ] focus:text-white rounded-lg bg-white text-black/50 border-[1px] border-[#4d22f4] transition"
+                            className="w-full p-3 mt-8 ] focus:text-white rounded-lg dark:bg-[#293141] text-gray-400 dark:text-white/50 border-[1px] border-[#4d22f4] transition"
                           >
                             Send{" "}
                             <FontAwesomeIcon
@@ -420,7 +420,7 @@ const Home: NextPage = () => {
                             />
                           </button>
                         ) : (
-                          <button className="w-full p-3 mt-8 bg-[#4d22f4]/25 border-[#4d22f4] hover:bg-[#4d22f4] text-black hover:text-white rounded-lg border-[1px]   transition">
+                          <button className="w-full p-3 mt-8 bg-[#4d22f4]/25 border-[#4d22f4] hover:bg-[#4d22f4] text-white hover:text-white rounded-lg border-[1px]   transition">
                             Send{" "}
                             <FontAwesomeIcon
                               icon={faPaperPlane}
@@ -468,7 +468,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      <footer className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex flex-row items-center justify-between py-5 text-white">
+      <footer className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex flex-row items-center justify-between py-5 text-black dark:text-white">
         <h1 className="">Copyright Digital Initiative 2022</h1>
         <div className="flex flex-row w-fit gap-2">
           <a href="https://www.instagram.com/digital_initative/"><FontAwesomeIcon icon={faInstagram} className="text-2xl hover:text-pink-400" /></a>

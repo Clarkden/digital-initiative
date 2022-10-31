@@ -6,7 +6,7 @@ config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="w-full min-h-screen bg-gray-900">
+    <div className="w-full min-h-screen bg-[#fcfbfc] dark:bg-gray-900">
       <Component {...pageProps} />
     </div>
   );
