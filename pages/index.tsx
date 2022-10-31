@@ -106,11 +106,12 @@ const Home: NextPage = () => {
         />
       </Head>
       <main className="min-h-full">
-        <section className="h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-400 via-purple-400 to-green-400">
+        <section className="h-fit w-full ">
+          <div className="bg-white h-[85vh] sm:h-[95vh] md:h-[90vh] lg:h-screen mx-auto relative overflow-hidden bg-gradient-to-tl from-pink-400/75 to-red-400/75  saturate-200">
           <Navbar />
-          <div className="w-11/12 md:w-8/12 mx-auto h-[50vh] sm:h-[40vh] md:h-[90vh] lg:h-[75%] flex flex-col-reverse md:flex-row items-center justify-start md:justify-between gap-16 sm:gap-10 md:gap-8 lg:gap-10">
+          <div className="w-11/12 md:w-8/12 mx-auto h-[40vh] sm:h-[45vh] md:h-[60vh] lg:h-[70%] flex flex-col-reverse md:flex-row items-center justify-start md:justify-between gap-16 sm:gap-10 md:gap-8 lg:gap-10">
             <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-3 w-8/12 md:w-full mx-auto text-[#3f12f1]">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-3 w-8/12 md:w-full mx-auto text-gray-900">
                 The only
                   digital marketing
                 team you will need to help your brand or product{" "}
@@ -137,7 +138,8 @@ const Home: NextPage = () => {
               </h1>
             </div>
           </div>
-          <div className="bg-gray-900 h-40 absolute -bottom-20 sm:-bottom-30 md:-bottom-40 -left-10 z-50 rotate-[8deg] w-[120vw] mx-auto "></div>
+          <div className="bg-gray-900 saturate-50 h-40 absolute -bottom-20 sm:-bottom-30 md:-bottom-40 -left-10 z-50 rotate-[8deg] w-[120vw] mx-auto "></div>
+                </div>
         </section>
         <section className="h-fit w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-black my-20">
           <div className="w-fit h-fit bg-rose-300 rounded-xl translate-x-1 translat-y-1">
